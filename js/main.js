@@ -1,7 +1,8 @@
+const hamburger = document.querySelector(".hamburger");
+const nav = document.querySelector(".nav-list");
 
-const APP= { 
-    init(){
+hamburger.addEventListener("click", toggleNav);
 
-    }
+function toggleNav() {
+    nav.classList.toggle("active");
 }
-document.addEventListener("DOMContentLoaded", APP.init)
