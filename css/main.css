@@ -32,12 +32,7 @@ ul,
 ol,
 dl,
 dd {
-    margin: 0 0;
-}
-
-ul[role='list'],
-ol[role='list'] {
-    list-style: none;
+    margin: 0;
 }
 
 html {
@@ -100,9 +95,9 @@ select {
 }
 
 .btn {
-    padding: 10px 20px;
-    border: 2px solid var(--primary);
-    border-radius: 5px;
+    padding: 0.625rem 1.25rem;
+    border: 0.125rem solid var(--primary);
+    border-radius: 0.313rem;
     width: fit-content;
     font-family: inherit;
     font-size: inherit;
@@ -130,57 +125,53 @@ select {
     background-color: var(--light);
     box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
     position: relative;
-}
 
-.nav h1, .nav h2, .nav h3 {
-    color: var(--primary);
-}
+    h1, h2, h3 {
+        color: var(--primary);
+    }
 
-.nav a {
-    padding: 0 1rem;
+    a {
+        padding: 0 1rem;
+    }
 }
 
 .nav-list {
     display: flex;
-    position: fixed;
+    position: absolute;
     padding: 0;
     right: -100%;
-    top: 0;
-    margin-top: 4rem;
+    top: 100%;
     width: fit-content;
     background-color: var(--light);
     box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
     flex-direction: column;
     align-items: center;
     list-style-type: none;
-}
 
-.nav-list a {
-    text-decoration: none;
+    a {
+        text-decoration: none;
+        text-align: center;
+        width: 100%;
+        padding: 1.5rem 1rem;
+        font-weight: bold;
+        color: var(--primary);
+    }
+
+    a:hover {
+        background-color: var(--primary);
+        color: white;
+    }
 }
 
 .nav .active {
     right: 0;
 }
 
-.nav-list a {
-    text-align: center;
-    width: 100%;
-    padding: 1.5rem 1rem;
-    font-weight: bold;
-    color: var(--primary);
-}
-
-.nav-list a:hover {
-    background-color: var(--primary);
-    color: white;
-}
-
 .bar {
     display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
+    width: 1.563rem;
+    height: 0.188rem;
+    margin: 0.313rem auto;
     background-color: #101010;
 }
 
@@ -203,25 +194,10 @@ select {
     align-items: center;
     justify-content: space-between;
     padding: 2rem 2rem;
-}
 
-.footer h2 {
-    color: var(--light);
-}
-
-.footer .nav-list {
-    background-color: var(--primary);
-    flex-direction: column;
-    align-items: flex-start;
-}
-
-.footer .nav-list a {
-    color: var(--light);
-    padding: 0.5rem;
-}
-
-.footer .nav-list a:hover {
-    background-color: var(--primary);
+    h2 {
+        color: var(--light);
+    }
 }
 
 .skip-link {
@@ -234,24 +210,23 @@ select {
     color: var(--light);
 }
 
-.card-group .card {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    background-color: rgb(216, 216, 216);
-    margin: 2rem 3rem;
-    padding: 1rem 2rem;
-    border-radius: 1.5rem;
-    grid-column: span 4;
-    box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.4);
-    border: 3px solid var(--primary);
-    align-items: center;
-}
-
 .card-group {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     width: 100%;
+
+    .card {display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        background-color: rgb(216, 216, 216);
+        margin: 2rem 3rem;
+        padding: 1rem 2rem;
+        border-radius: 1.5rem;
+        grid-column: span 4;
+        box-shadow: 0rem 0.25rem 0.5rem rgba(0, 0, 0, 0.4);
+        border: 0.188rem solid var(--primary);
+        align-items: center;
+    }
 }
 
 .btn-group {
@@ -277,10 +252,10 @@ select {
         padding: 0;
         background-color: var(--light);
         box-shadow: none;
-    }
 
-    .nav-list a {
-        width: auto;
+        a {
+            width: auto;
+        }
     }
 }
 
