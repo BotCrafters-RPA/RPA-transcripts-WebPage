@@ -177,7 +177,8 @@
 .banner-text {
   display: flex;
   flex-direction: column;
-justify-content: space-between;
+  align-items: center;
+  justify-content: space-between;
   animation: textLocation 1s ease-in;
   -webkit-animation: textLocation 1s ease-in;
 }
@@ -225,6 +226,9 @@ justify-content: space-between;
 @media only screen and (min-width: 45em) {
   .banner {
     height: 80vh;
+  }
+  .banner-text{
+    align-items: start;
   }
 }
 @media only screen and (min-width: 70em) {
