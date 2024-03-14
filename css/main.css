@@ -2,7 +2,7 @@
   --light: #fff;
   --dark: #000;
 
-  --primary: #ff6450;
+  --primary: rgb(255, 100, 80);
   --primary-light: #ffa19a; /* Lighter shade of primary */
   --primary-dark: #d63317; /* Darker shade of primary */
   
