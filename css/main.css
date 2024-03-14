@@ -166,7 +166,7 @@
   align-items: center;
   padding-top: 3rem;
   background-color: var(--icon-tertiary);
-  height: 80vh;
+  height: 70vh;
 }
 .banner-layout {
   display: grid;
@@ -174,11 +174,15 @@
   height: 100%;
   color: var(--light);
 }
-.banner-text{
-  animation: textLocation 1s ease-in ;
-  -webkit-animation: textLocation 1s ease-in ;
+.banner-text {
+  display: flex;
+  flex-direction: column;
+justify-content: space-between;
+  animation: textLocation 1s ease-in;
+  -webkit-animation: textLocation 1s ease-in;
 }
-.banner-img img {
+
+.banner-img {
   display: none;
 }
 @keyframes textLocation {
@@ -189,7 +193,7 @@
     -moz-transform: translateX(-1rem);
     -ms-transform: translateX(-1rem);
     -o-transform: translateX(-1rem);
-}
+  }
   100% {
     transform: translateX(0rem);
     color: var(--light);
@@ -197,8 +201,7 @@
     -moz-transform: translateX(0rem);
     -ms-transform: translateX(0rem);
     -o-transform: translateX(0rem);
-}
-  
+  }
 }
 
 @keyframes imgLocation {
@@ -209,7 +212,7 @@
     -moz-transform: translateX(3rem);
     -ms-transform: translateX(3rem);
     -o-transform: translateX(3rem);
-}
+  }
   100% {
     transform: translateX(0);
     opacity: 1;
@@ -217,19 +220,22 @@
     -moz-transform: translateX(0);
     -ms-transform: translateX(0);
     -o-transform: translateX(0);
-}
-  
+  }
 }
 @media only screen and (min-width: 45em) {
   .banner {
-  height: 70vh;
+    height: 80vh;
   }
-  .banner-layout{
-    gap: 1rem;
+}
+@media only screen and (min-width: 70em) {
+  .banner-layout {
+    gap: 2rem;
     grid-template-columns: 2fr 1fr;
   }
-  .banner-img img{
-    display: initial;
+  .banner-img {
+    display: flex;
+  }
+  .banner-img img {
     object-fit: cover;
     animation: imgLocation 1s ease-in;
   }
