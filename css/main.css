@@ -152,7 +152,7 @@
   -ms-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
 }
-@media only screen and (min-width: 45em) {
+@media only screen and (min-width: 45em){
   .nav {
     display: initial;
   }
@@ -166,7 +166,7 @@
   align-items: center;
   padding-top: 3rem;
   background-color: var(--icon-tertiary);
-  height: 70vh;
+  height: 50vh;
 }
 .banner-layout {
   display: grid;
@@ -223,15 +223,19 @@
     -o-transform: translateX(0);
   }
 }
-@media only screen and (min-width: 45em) {
-  .banner {
-    height: 80vh;
+
+@media only screen and (min-width: 45em)  {
+  .banner { 
+    height: 70vh;
   }
   .banner-text{
     align-items: start;
   }
 }
 @media only screen and (min-width: 70em) {
+   .banner { 
+    height: 85vh;
+  }
   .banner-layout {
     gap: 2rem;
     grid-template-columns: 2fr 1fr;
@@ -242,6 +246,11 @@
   .banner-img img {
     object-fit: cover;
     animation: imgLocation 1s ease-in;
+  }
+}
+@media only screen and (max-height: 38em) {
+  .banner {
+    height: 100vh;
   }
 }
 /* Main Styles */
