@@ -39,9 +39,8 @@
 }
 .header-layout h2 {
   margin: 0;
-  color: var(--primary);
+  color: var(--primary-dark);
 }
-
 .header-button {
   background-color: transparent;
   border: none;
@@ -52,7 +51,7 @@
 }
 .nav-mobile {
   position: absolute;
-  border-left: 0.5rem solid var(--primary);
+  border-left: 0.5rem solid var(--primary-dark);
   height: 100vh;
   width: 100vw;
   left: 45em;
@@ -65,13 +64,7 @@
 }
 .nav-mobile.active {
   left: 0em;
-  transition: left 0.75s ease-in-out;
-  -webkit-transition: left 0.75s ease-in-out;
-  -moz-transition: left 0.75s ease-in-out;
-  -ms-transition: left 0.75s ease-in-out;
-  -o-transition: left 0.75s ease-in-out;
 }
-
 .background-color {
   background-color: rgba(128, 128, 128, 0.554);
   position: absolute;
@@ -79,7 +72,6 @@
   width: 100vw;
   height: 100vh;
 }
-
 .nav-list-mobile {
   background-color: var(--light);
   position: relative;
@@ -94,7 +86,6 @@
   padding-left: 0;
   margin: 0;
 }
-
 .nav-list-mobile img {
   width: 1rem;
   height: 1rem;
@@ -110,9 +101,8 @@
   padding: 1.5rem 1.5rem;
 }
 .nav-list-mobile a:not(:last-child) {
-  border-bottom: 0.1rem solid var(--primary);
+  border-bottom: 0.1rem solid var(--icon-secondary);
 }
-
 .nav-list-mobile li {
   display: flex;
   justify-content: space-between;
@@ -122,7 +112,6 @@
   margin: 0;
   padding: 0;
 }
-
 @media only screen and (min-width: 45em) {
   .header-button,
   .nav-mobile {
@@ -150,7 +139,7 @@
 }
 .nav-list a {
   text-decoration: none;
-  color: var(--primary);
+  color: var(--primary-dark);
   padding: 1rem;
 }
 .nav-list a:hover,
@@ -168,3 +157,49 @@
     display: initial;
   }
 }
+
+/* Header Styless */
+
+/* Main Styles */
+.banner {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
+  background-color: var(--primary);
+  height: 80vh;
+}
+.banner-layout {
+  display: grid;
+  grid-template-columns: 1fr;
+  height: 100%;
+  color: var(--light);
+}
+.banner-text{
+  animation: textLocation 1s ease-in ;
+  -webkit-animation: textLocation 1s ease-in ;
+}
+.banner-img img {
+  display: none;
+  height: 10rem;
+  object-fit: cover;
+}
+@keyframes textLocation {
+  0% {
+    transform: translateX(-1rem);
+    color: transparent;
+    -webkit-transform: translateX(-1rem);
+    -moz-transform: translateX(-1rem);
+    -ms-transform: translateX(-1rem);
+    -o-transform: translateX(-1rem);
+}
+  100% {
+    transform: translateX(-1rem);
+    color: var(--light);
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(-1rem);
+    -ms-transform: translateX(-1rem);
+    -o-transform: translateX(-1rem);
+}
+  
+}
+/* Main Styles */
