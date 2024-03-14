@@ -15,19 +15,47 @@
       <div class="container">
         <section class="header-layout">
           <h2>BotCrafters</h2>
-          <nav class="nav">
-            <ul class="nav-list" role="list" id="nav-list">
-              <a href="#"><li>Home</li></a>
-              <a href="#"><li>Our Team</li></a>
-              <a href="#"><li>The Project</li></a>
+          <nav class="nav-mobile">
+            <div
+              class="background-color"
+              id="background-color-controller"
+            ></div>
+            <ul class="nav-list-mobile" role="list" id="nav-list">
+              <h2>BotCrafters</h2>
+              <a href="#">
+                <li>
+                  <p>Home</p>
+                  <img src="./assets/chevron-right-solid.svg" alt="" />
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  <p>Our Team</p>
+                  <img src="./assets/chevron-right-solid.svg" alt="" />
+                </li>
+              </a>
+              <a href="#">
+                <li>
+                  <p>The Project</p>
+                  <img src="./assets/chevron-right-solid.svg" alt="" />
+                </li>
+              </a>
             </ul>
           </nav>
-
+          <!-- Mobile nav menu -->
+          <nav class="nav">
+            <ul class="nav-list" role="list" id="nav-list">
+              <a href="#"><li><p>Home</p></li></a>
+              <a href="#"><li><p>Our Team</p></li></a>
+              <a href="#"><li><p>The Project</p></li></a>
+            </ul>
+          </nav>
           <!-- Button to display the menu on mobile -->
           <button class="header-button" id="mobile-menu-controller">
             <!-- Change imge src when clicked -->
             <!-- Change alt when clicked to "Click here to close hamburguer menu" -->
             <img
+              id="mobile-menu-icon"
               src="./assets/bars-solid.svg"
               alt="Clikc here to open hamburguer manu"
             />
