@@ -3,43 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-     <!-- Main css contains the reset and the global styles -->
+    <!-- Main css contains the reset and the global styles -->
     <link rel="stylesheet" href="css/reset.css" />
     <!-- Header css contains the styles for the header -->
     <link rel="stylesheet" href="css/main.css" />
-   
+
     <title>BotCrafters - Home</title>
   </head>
   <body>
-    <header class="nav">
-      <h2>BotCrafters</h2>
-      <ul class="nav-list" role="list">
-        <a href="index.html"><li>Home</li></a>
-        <a href="about.html"><li>Our Team</li></a>
-        <a href="project.html"><li>The Project</li></a>
-      </ul>
-      <div class="hamburger">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
+    <header class="header">
+      <div class="container">
+        <section class="header-layout">
+          <h2>BotCrafters</h2>
+          <nav class="nav">
+            <ul class="nav-list" role="list" id="nav-list">
+              <a href="#"><li>Home</li></a>
+              <a href="#"><li>Our Team</li></a>
+              <a href="#"><li>The Project</li></a>
+            </ul>
+          </nav>
+
+          <!-- Button to display the menu on mobile -->
+          <button class="header-button" id="mobile-menu-controller">
+            <!-- Change imge src when clicked -->
+            <!-- Change alt when clicked to "Click here to close hamburguer menu" -->
+            <img
+              src="./assets/bars-solid.svg"
+              alt="Clikc here to open hamburguer manu"
+            />
+          </button>
+        </section>
       </div>
     </header>
-    <main>
-      <section class="banner">
-        <!-- image -->
+
+    <!--  -->
+    <main class="main">
+      <section class="container">
         <h1>Creating automated solutions.</h1>
       </section>
-      <!-- About RPA 
-        About Uipath
-        About the Team
-        Contact Us           
-        HAS TO BE SPLIT INTO WEBPAGES  -->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <p class="copyright">&copy; BotCrafters</p>
       <a href="#top" class="skip-link">Go to top</a>
-    </footer>
+    </footer> -->
   </body>
   <!-- Wait for the DOM to load  -->
-   <script defer src="js/main.js"></script>
+  <script defer src="js/main.js" defer></script>
 </html>

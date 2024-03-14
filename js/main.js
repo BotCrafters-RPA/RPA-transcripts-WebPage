@@ -1,8 +1,12 @@
-const hamburger = document.querySelector(".hamburger");
-const nav = document.querySelector(".nav-list");
 
-hamburger.addEventListener("click", toggleNav);
 
-function toggleNav() {
-    nav.classList.toggle("active");
-}
+const APP = {
+  init() {
+    document.getElementById("mobile-menu-controller").addEventListener("click", APP.toogleHeaderMenu);
+  },
+  toogleHeaderMenu() {
+    const nav = document.querySelector(".nav-list");
+    nav.classList.toggle("active")
+  },
+};
+document.addEventListener("DOMContentLoaded", APP.init);
