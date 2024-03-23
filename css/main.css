@@ -152,7 +152,7 @@
   -ms-transition: all 0.35s ease-in-out;
   -o-transition: all 0.35s ease-in-out;
 }
-@media only screen and (min-width: 45em){
+@media only screen and (min-width: 45em) {
   .nav {
     display: initial;
   }
@@ -162,11 +162,22 @@
 
 /* Main Styles */
 .banner {
+ display: flex;
+ align-items: center;
+ padding-top: 3rem;
+ background-color: var(--icon-tertiary);
+ background-image: url("../assets/banner.jpg");
+ background-size: cover;
+ height: 50vh;
+
+}
+.banner-color {
+  background-color:  rgba(0, 0, 0, 0.659);
+  height: -webkit-fill-available;
   display: flex;
-  align-items: center;
-  padding-top: 3rem;
-  background-color: var(--icon-tertiary);
-  height: 50vh;
+}
+.banner-color section {
+  align-self: center;
 }
 .banner-layout {
   display: grid;
@@ -179,8 +190,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  animation: textLocation 1s ease-in;
-  -webkit-animation: textLocation 1s ease-in;
+  animation: textLocation 500ms ease-in;
+  -webkit-animation: textLocation 500ms ease-in;
 }
 
 .banner-img {
@@ -224,16 +235,16 @@
   }
 }
 
-@media only screen and (min-width: 45em)  {
-  .banner { 
+@media only screen and (min-width: 45em) {
+  .banner {
     height: 70vh;
   }
-  .banner-text{
+  .banner-text {
     align-items: start;
   }
 }
 @media only screen and (min-width: 70em) {
-   .banner { 
+  .banner {
     height: 85vh;
   }
   .banner-layout {

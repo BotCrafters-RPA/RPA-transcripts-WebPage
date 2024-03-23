@@ -230,5 +230,5 @@ small {
 .btn:hover,
 .btn:focus-visible {
   background-color: var(--primary-light);
-  color: #fff;
+  color: #000000;
 }
