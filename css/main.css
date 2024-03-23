@@ -279,7 +279,7 @@
   text-align: center;
 }
 .grid-about{
-  display: grid;
+    display: grid;
 }
 
 @media only screen and (min-width: 45em) {
